@@ -13,9 +13,9 @@ $(TARGET): $(TARGET).o
 	@$(CC) $(TARGET).o -lm -o $(TARGET)
 	@$(PROGSIZE) $(TARGET)
 
-$(TARGET).o: $(TARGET).c
+$(TARGET).o: $(TARGET).cpp
 	@echo "$(TARGET).c -> $(TARGET).o"
-	@$(CC) $(CPPFLAGS) -c $(TARGET).c
+	@$(CC) $(CPPFLAGS) -c $(TARGET).cpp
 	@$(PROGSIZE) $(TARGET).o
 
 clean:
