@@ -1,14 +1,14 @@
-TARGET = bin2hex
-PKG = $(TARGET)
+TARGET     = bin2hex
+PKG        = $(TARGET)
 
-CC = gcc
-STRIP ?= strip
-INSTALL = install
-PROGSIZE = size
-PREFIX ?= /usr
-BINDIR ?= $(PREFIX)/bin
-CPPFLAGS ?= -Wall -O3
-LDFLAGS ?= -lm
+CC        ?= gcc
+STRIP     ?= strip
+INSTALL   ?= install
+PROGSIZE  ?= size
+PREFIX    ?= /usr
+BINDIR    ?= $(PREFIX)/bin
+CPPFLAGS  ?= -Wall -O3
+LDFLAGS   ?= -lm
 WARNERROR ?= no
 
 ifeq ($(WARNERROR), yes)
