@@ -1,7 +1,6 @@
 ._*
 .DS_Store
-ch341eeprom
-mktestimg
+bin2hex
 
 *~.nib
 DerivedData/
